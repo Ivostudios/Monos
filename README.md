@@ -66,7 +66,6 @@ Statistiche calcolate **solo sul telefono** 📲, a partire dal giorno in cui in
  
 ## Requisiti
 - Android 8.0 (API 26) o successivo.
-## Come ottenere l'APK
  
 ## Tecnologie
 - **Kotlin** e **Jetpack Compose**, con componenti grafici scritti da zero
