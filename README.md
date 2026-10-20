@@ -10,7 +10,7 @@ Un player musicale per Android, pensato per chi ascolta i **propri brani locali*
 > Il progetto è nato come esperimento di design: l'interfaccia segue un file Figma ed è costruita da zero, senza componenti Material 3.
 
 ![Home](docs/assets/images/home.png)
- 
+
 ## Caratteristiche
  
 ### 🎧 Ascolto 
@@ -19,25 +19,34 @@ Un player musicale per Android, pensato per chi ascolta i **propri brani locali*
 - **Velocità e pitch indipendenti**: puoi accelerare un brano senza alterarne il tono, o cambiarne il tono senza toccare la velocità.
 - Casuale, ripeti brano o tutti, e un cuore per salvare i preferiti.
 ### ▶️ Il player 
+
 ![Player](docs/assets/images/player.png)
+
 - Schermo intero con **sfondo sfocato** costruito sui colori della copertina (la sfocatura vera richiede Android 12 o successivo; sulle versioni precedenti si usa un gradiente).
 - Tre pagine da scorrere con un gesto: **Informazioni**, **Copertina** e **Testi**. La pagina Informazioni compare solo per i brani che appartengono a un album e mostra la posizione del brano ("Traccia 3 di 14"), gli artisti e i dati audio.
 - Transizioni animate al cambio brano e al trascinamento del player verso il basso.
 - Mini player e barra di navigazione in una fascia scura che prende il colore della copertina in riproduzione.
+- 
 ### 🎶 Testi sincronizzati
+
 ![Player](docs/assets/images/player-lyrics.png)
+
 - Le righe scorrono a tempo: quella corrente è in evidenza, le altre sfumano e si sfocano. Un tocco su una riga porta il brano a quel punto.
 - I testi si scaricano da [LRCLIB](https://lrclib.net), un database gratuito e collaborativo, alla prima apertura di un brano, oppure tutti insieme dalle impostazioni.
 - Una volta scaricati restano salvati nell'app. Puoi anche importare a mano un file `.lrc`.
 ### 📌 Organizzazione
+
 ![Player](docs/assets/images/library.png) ![Player](docs/assets/images/tracks-list.png)
+
 - **Home**: album suggeriti, album del giorno, artista del giorno con alcuni brani, brani suggeriti. Le proposte del giorno cambiano ogni giorno e nascono dai metadati dei tuoi brani.
 - **Library**: brani preferiti, playlist e album, in griglia o in elenco.
 - **Brani**: l'elenco completo, per data di aggiunta o in ordine alfabetico.
 - Ricerca su brani, album e artisti.
 - Playlist create da te, con scelta dei brani dall'elenco.
 ### ❇️ Dashboard
+
 ![Player](docs/assets/images/dashboard.png)
+
 Statistiche calcolate **solo sul telefono** 📲, a partire dal giorno in cui installi l'app:
 - giorni di ascolto consecutivi, con la settimana in corso;
 - ore totali di ascolto;
