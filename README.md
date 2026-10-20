@@ -1,8 +1,9 @@
 
 
 Readme · MD
-# 💙 MONOS - LOCAL MUSIC PLAYER
 
+# 💙 MONOS - LOCAL MUSIC PLAYER
+![Home](docs/assets/images/banner.png)
  
 Un player musicale per Android, pensato per chi ascolta i **propri brani locali**: niente account, niente abbonamenti, niente tracciamento. Un'interfaccia pulita e minimale, con testi sincronizzati, controlli separati di velocità e pitch e una dashboard con le tue statistiche d'ascolto.
  
