@@ -8,7 +8,7 @@ Un player musicale per Android, pensato per chi ascolta i **propri brani locali*
  
 > Il progetto è nato come esperimento di design: l'interfaccia segue un file Figma ed è costruita da zero, senza componenti Material 3.
 
-![Home](docs/assets/images/home.png|width=150)
+![Home](docs/assets/images/home.png)
  
 ## Caratteristiche
  
