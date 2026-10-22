@@ -18,5 +18,5 @@ jobs:
       - run: gradle assembleDebug
       - uses: actions/upload-artifact@v4
         with:
-          name: MyPlayer-debug
-          path: app/build/outputs/apk/debug/*.apk
+          name: Monos
+          path: monos-beta-1.05apk
