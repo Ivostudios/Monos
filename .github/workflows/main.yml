@@ -16,7 +16,8 @@ jobs:
         with:
           gradle-version: 8.9
       - run: gradle assembleDebug
+      - run: cp app/build/outputs/apk/debug/app-debug.apk monos.apk
       - uses: actions/upload-artifact@v4
         with:
           name: Monos
-          path: monos-beta-1.05apk
+          path: com.studiovi.monos-v1.045.apk
