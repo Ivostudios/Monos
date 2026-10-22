@@ -19,5 +19,5 @@ jobs:
       - run: cp app/build/outputs/apk/debug/app-debug.apk monos.apk
       - uses: actions/upload-artifact@v4
         with:
-          name: Monos
-          path: com.studiovi.monos-v1.045.apk
+          name: monos
+          path: monos-v1.05.apk
