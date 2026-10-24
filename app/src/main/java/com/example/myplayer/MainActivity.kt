@@ -58,7 +58,14 @@ class MainActivity : ComponentActivity() {
     }
     override fun onDestroy() { ctl.release(); super.onDestroy() }
 }
-
+/** Versione scura ma chiaramente colorata della copertina, per la fascia del mini player. */
+fun dockTone(c: Color): Color {
+    val hsv = FloatArray(3)
+    android.graphics.Color.RGBToHSV((c.red * 255).toInt(), (c.green * 255).toInt(), (c.blue * 255).toInt(), hsv)
+    if (hsv[1] < 0.12f) { hsv[1] = 0f; hsv[2] = 0.07f }
+    else { hsv[1] = hsv[1].coerceIn(0.45f, 0.9f); hsv[2] = 0.40f }
+    return Color(android.graphics.Color.HSVToColor(hsv))
+}
 /** Il primo colore (Unspecified) significa monocromatico: nero in chiaro, bianco in scuro. */
 val Accents = listOf(
     Color.Unspecified, Color(0xFF0026FF), Color(0xFFD63AF0), Color(0xFF2EBF4F), Color(0xFFC00000)
@@ -162,7 +169,7 @@ fun App(ctl: Ctl) {
             c.isAppearanceLightNavigationBars = pill && !dark && !playerVisible
         }
         val cover = rememberCoverColor(ctl.currentSong?.art, Color(0xFF070707))
-        val dockTarget = if (coloured && ctl.currentSong != null) lerp(cover, Color.Black, 0.8f) else Color(0xFF070707)
+        val dockTarget = if (coloured && ctl.currentSong != null) dockTone(cover) else Color(0xFF070707)
         val dock by animateColorAsState(dockTarget, tween(600), label = "dock")
         CompositionLocalProvider(LocalQuick provides { q: Quick -> quick = q }) {
         BoxWithConstraints(Modifier.fillMaxSize().background(if (pill) p.bg else dock)) {
